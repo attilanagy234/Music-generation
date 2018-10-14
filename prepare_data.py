@@ -73,6 +73,6 @@ def generate_sequence(vocab, notes):
     net_output = np_utils.to_categorical(net_output)
 
     print("Net_input is:", net_input)
-    print("Net_output is:%", net_output)
+    print("Net_output is:", net_output)
 
     return net_input, net_output
