@@ -49,15 +49,11 @@ def train(model, net_input, net_output):
 
 def train_net():
     notes = pd.convert_from_midi()
-
     vocab = len(set(notes))
-
     net_input, net_output = pd.generate_sequence(vocab, notes)
-
     model = build_network(net_input, vocab)
-
     train(model, net_input, net_output)
 
-
+ 
 if __name__ == '__main__':
     train_net()
